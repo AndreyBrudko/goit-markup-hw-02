@@ -3,8 +3,8 @@
     --text-primary: #212121;
     --text-secondary: #757575;
 
-    --primary-font: 'Roboto';
-    --secondary-font: 'Raleway';
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
 }
 
 body{
@@ -26,8 +26,8 @@ a{
 /*======== Header styles starts here ========*/
 
 .logo{
-    font-family: var(--secondary-font), sans-serif;
-    font-weight: bold;
+    font-family: var(--secondary-font);
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     /* identical to box height */
@@ -41,7 +41,7 @@ a{
 
 
 .nav-link{
-    font-weight: 500;
+    
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -55,7 +55,7 @@ a{
 }
 
 .link-phone{
-    font-weight: 500;
+    
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -64,7 +64,7 @@ a{
 }
 
 .link-mail{
-    font-weight: 500;
+    
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -104,9 +104,7 @@ a{
 }
 
 .button{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     /* identical to box height, or 187% */
@@ -115,6 +113,8 @@ a{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    background: var(--theme-color);
+    cursor: pointer;
 
     color: #FFFFFF;
 }
@@ -128,7 +128,7 @@ a{
 
 /*======== Description styles starts here ========*/
 .title-work{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -137,7 +137,7 @@ a{
 }
 
 .descr-work{
-    font-weight: normal;
+    
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
@@ -146,7 +146,7 @@ a{
 }
 
 .title-icon{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -156,7 +156,7 @@ a{
 }
 
 .community-header{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -166,7 +166,7 @@ a{
 }
 
 .name{
-    font-weight: 500;
+    
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
@@ -178,7 +178,7 @@ a{
 }
 
 .position{
-    font-weight: normal;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
@@ -191,6 +191,50 @@ a{
 
 /*======== Description styles ends here ========*/
 
+/*======== Portfolio main styles starts here ========*/
+.filter-item{
+   
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    color: var(--text-primary);
+}
+
+.filter-item:focus,
+.filter-item:hover{
+    background-color: var(--theme-color);
+    color: #FFFFFF;
+}
+
+.project{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+
+    color: var(--text-primary);
+}
+.tupe-project{
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 187% */
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-secondary);
+}
+
+
+
+/*======== Portfolio main styles ends here ========*/
+
 
 
 /*======== Footer styles starts here ========*/
@@ -200,7 +244,7 @@ a{
 
 .link-address{
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
@@ -212,7 +256,7 @@ a{
 
 .link-mail-foot{
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
@@ -224,8 +268,8 @@ a{
 
 }
 .link-phone-foot{
+
     font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
@@ -235,6 +279,10 @@ a{
     color: rgba(255, 255, 255, 0.6);
 
 
+}
+
+.part-logo-footer{
+    color: #FFFFFF;
 }
 
 
